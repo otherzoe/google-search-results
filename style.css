@@ -81,3 +81,33 @@ input#search {
     text-decoration:none;
     border-radius:5px;
 }
+
+#search-type {
+    margin-top:20px;
+    display:flex;
+    gap:10px;
+}
+
+#search-type button {
+ border:0;
+ padding:10px 0;
+ background:transparent;
+ border-bottom:3px solid transparent;   
+ font:14px arial;
+ color:var(--mediumgray)
+}
+
+#search-type button:hover {
+    cursor:pointer;
+}
+
+#search-type button.active {
+    border-color:var(--blue);
+}
+
+#search-type button[value=search-tools] {
+    color:var(--mediumgray);
+    flex-grow:1;
+    text-align:right;
+    padding-right:20px;
+}
