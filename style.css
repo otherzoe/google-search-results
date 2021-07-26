@@ -1,0 +1,37 @@
+:root {
+    --lightgray:#eee;
+}
+
+header {
+    width:calc(100% - 50px);
+    padding:25px;
+    border-bottom:1px solid var(--lightgray);
+}
+
+#searchbox {
+    display:flex;
+    align-items:center;
+}
+
+#searchbox button {
+    color:red;
+    padding:0;
+}
+
+#searchlabel {
+    width:100px;
+    margin-right:25px;
+}
+
+#searchlabel img {
+    display:block;
+    width:100%;
+}
+
+input#search {
+    padding:12.5px 50px 12.5px 25px;
+    border-radius:25px;
+    border:0;
+    box-shadow:0 0 5px rgba(0,0,0,20%);
+    font:16px arial;
+}
