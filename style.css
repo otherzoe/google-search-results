@@ -164,4 +164,19 @@ main .featured-snippit .image-preview img {
 main .featured-snippit .snippit-title {
     font:2rem/1 'roboto';
     padding:20px 0;
+    letter-spacing:-1px;
+}
+
+main .featured-snippit .snippit-body {
+    font:1rem/1.5 'roboto';
+}
+
+main .featured-snippit .snippit-body strong {
+    font-weight:700;
+}
+
+main .featured-snippit .snippit-body em {
+    font-size:0.75rem;
+    color:var(--mediumgray);
+    margin-left:5px;
 }
