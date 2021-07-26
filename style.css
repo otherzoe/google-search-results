@@ -3,9 +3,11 @@
     --mediumgray:#888;
     --darkgray:#444;
     --blue: #1a73e8;
-
+    font-size:16px;
 }
-
+body {
+    width:1300px;
+}
 header {
     width: calc(100% - 60px);
     padding: 30px 30px 0;
@@ -54,7 +56,7 @@ input#search {
     border-radius:25px;
     border:0;
     box-shadow:0 2px 5px rgba(0,0,0,20%);
-    font:16px/1 arial;
+    font:1rem/1 arial;
     flex-grow:1;
 }
 
@@ -76,7 +78,7 @@ input#search {
 #user-controls .sign-in {
     background:var(--blue);
     padding:10px 20px;
-    font:13px arial;
+    font:0.75rem arial;
     color:#fff;
     text-decoration:none;
     border-radius:5px;
@@ -92,7 +94,7 @@ input#search {
  padding:10px 0;
  background:transparent;
  border-bottom:3px solid transparent;   
- font:14px arial;
+ font:0.75rem arial;
  color:var(--mediumgray);
  display:flex;
  align-items:center;
@@ -100,7 +102,7 @@ input#search {
 }
 
 #search-type button .material-icons-outlined {
-    font-size:18px;
+    font-size:1.25rem;
     margin-right:5px;
 }
 
@@ -133,20 +135,20 @@ main {
 main .search-results {
     padding:15px 0;
     color:var(--mediumgray);
-    font:14px arial;
+    font:0.75rem arial;
 }
 
-main .image-preview {
+main .featured-snippit .image-preview {
     display:flex;
     flex-flow:column wrap;
     width:100%;
     border-radius:7px;
     overflow:hidden;
     height:125px;
-    gap:5px;
+    gap:3px;
 }
 
-main .image-preview article {
+main .featured-snippit .image-preview article {
     width:175px;
     display:flex;
     place-content:center;
@@ -154,7 +156,12 @@ main .image-preview article {
     overflow:hidden;
 }
 
-main .image-preview img {
+main .featured-snippit .image-preview img {
     display:block;
     height:100%;
+}
+
+main .featured-snippit .snippit-title {
+    font:2rem/1 'roboto';
+    padding:20px 0;
 }
