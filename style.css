@@ -1,6 +1,7 @@
 :root {
     --lightgray:#eee;
     --mediumgray:#888;
+    --darkgray:#444;
     --blue: rgb(137, 182, 250);
 }
 
@@ -52,7 +53,7 @@ input#search {
     margin-right:-100px;
     border-radius:25px;
     border:0;
-    box-shadow:0 0 5px rgba(0,0,0,20%);
+    box-shadow:0 2px 5px rgba(0,0,0,20%);
     font:16px/1 arial;
     flex-grow:1;
 }
@@ -63,4 +64,20 @@ input#search {
 
 #user-controls {
     justify-self: end;
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+#user-controls a {
+    color:var(--darkgray);
+}
+
+#user-controls .sign-in {
+    background:var(--blue);
+    padding:10px 20px;
+    font:13px arial;
+    color:#fff;
+    text-decoration:none;
+    border-radius:5px;
 }
