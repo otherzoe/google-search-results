@@ -4,19 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <title>(Odin) Google</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
+    rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <header>
         <form id="searchbox">
             <label form="searchbox" for="search" id="searchlabel"><img
                     src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
                     alt="Google logo"></label>
             <input form="searchbox" type="search" id="search" value="internet explorer end of life">
-            <button form="searchbox" type="reset">clear</button>
-            <button form="searchbox" type="submit">submit</button>
+            <button form="searchbox" type="reset" id="search-reset"><span class="material-icons-outlined">
+                close
+                </span></button>
+            <button form="searchbox" type="submit" id="search-submit"><span class="material-icons-outlined">
+                search
+                </span></button>
         </form>
         <div id="user-controls">
             <a href="#settings">settings</a>
