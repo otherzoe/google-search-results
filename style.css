@@ -1,5 +1,5 @@
 :root {
-    --lightgray:#eee;
+    --lightgray:#ebebeb;
     --mediumgray:#888;
     --darkgray:#444;
     --gray:#ccc;
@@ -187,7 +187,7 @@ main .featured-snippit a.snippet-link {
     display:block;
     font:1.25rem/1 'roboto';
     margin-top:25px;
-    margin-bottom:25px;
+    margin-bottom:20px;
     text-decoration:none;
 }
 
@@ -245,4 +245,50 @@ main .featured-snippit .snippet-footer a:hover {
 
 main .featured-snippit .snippet-footer a {
     color:var(--mediumgray);
+}
+
+.search-suggest {
+    display:flex;
+    flex-flow:column nowrap;
+    margin-top:40px;
+}
+
+.search-suggest .suggest-header {
+    font:1.5rem/1 'roboto';
+    padding:0 0 15px;
+}
+
+.search-suggest .suggest-header span {
+    font-size:1rem;
+    margin-left:5px;
+    color:gray;
+}
+
+.search-suggest a {
+    border-top:1px solid var(--lightgray);
+    padding:10px 0;
+    text-decoration:none;
+    font:1rem 'roboto';
+    color:black;
+    display:flex;
+    align-items:center;
+}
+
+.search-suggest a span {
+    flex-grow:1;
+    text-align:right;
+    font-size:1.5rem;
+    line-height:1rem;
+    color:gray;
+}
+
+.suggest-footer {
+    display:flex;
+    font:0.75rem 'roboto';
+    color:gray;
+    align-items:center;
+}
+
+.suggest-footer .flex-grow {
+    margin-right:10px;
 }
