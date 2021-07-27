@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+    <header style="display:none">
         <form id="searchbox">
             <label form="searchbox" for="search" id="searchlabel"><img
                     src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
@@ -59,8 +59,8 @@
         </div>
     </header>
     <main>
-        <div class="search-results">About 87,000,000 results (0.68 seconds)</div>
-        <div class="featured-snippit">
+        <div class="search-results" style="display:none">About 87,000,000 results (0.68 seconds)</div>
+        <div class="featured-snippit" style="display:none">
             <div class="image-preview">
                 <article><img src="https://i.ibb.co/vxs7pKd/image.png" alt=""></article>
                 <article><img src="https://i.ibb.co/JRJptq2/Internet-Explorer-11-screenshot.png" alt=""></article>
@@ -115,13 +115,53 @@
             </div>
         </div>
         <div class="search-list">
-            <article>
-                <a href="#"><small>https://blogs.windows.com <span>› 2021/05/19 › the-future-o...</span></small><span
-                        class="material-icons-outlined">
-                        more_vert
-                    </span>The future of Internet Explorer on Windows 10 is in Microsoft ...</a>
-                    <p><em>May 19, 2021</em> — With Microsoft Edge capable of assuming this responsibility and more, the Internet Explorer 11 desktop application will be retired and go out of ...
-                    </p>
+            <article class="search-item">
+                <a href="#">
+                    <small>https://blogs.windows.com
+                        › 2021/05/19 › the-future-o...
+                        <span class="material-icons-outlined">
+                            more_vert
+                        </span>
+                    </small>
+                    <div>The future of Internet Explorer on Windows 10 is in Microsoft ...</div>
+                </a>
+                <p>
+                    <em>May 19, 2021</em>
+                    — With Microsoft Edge capable of assuming this responsibility and more, the
+                    <strong>Internet Explorer</strong> 11 desktop application will be retired and go out of ...
+                </p>
+            </article>
+            <article class="search-item">
+                <a href="#">
+                    <small>https://docs.microsoft.com <span>› Lifecycle › Lifecycle FAQs</span>
+                        <span class="material-icons-outlined">
+                            more_vert
+                        </span>
+                    </small>
+                    <div>
+                        Lifecycle FAQ - Internet Explorer and Microsoft Edge ...</div>
+                </a>
+                <p>
+                    <em>Jul 17, 2021</em>
+                    Please note that the <strong>Internet Explorer (IE)</strong> 11 desktop application will
+                    <strong>end</strong> support for certain operating systems starting June 15, 2022.
+                </p>
+            </article>
+            <article class="search-item">
+                <a href="#">
+                    <small>https://docs.microsoft.com <span>› Lifecycle › Lifecycle FAQs</span>
+                        <span class="material-icons-outlined">
+                            more_vert
+                        </span>
+                    </small>
+                    <div>
+                        Lifecycle FAQ - Internet Explorer and Microsoft Edge ...</div>
+                </a>
+                <p>
+                    <em>Jul 17, 2021</em>
+                    Please note that the <strong>Internet Explorer (IE)</strong> 11 desktop application will
+                    <strong>end</strong> support for certain operating systems starting June 15, 2022.
+                </p>
             </article>
         </div>
     </main>
