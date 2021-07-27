@@ -392,3 +392,25 @@ text-decoration:none;
     pointer-events:none;
     border-radius:10px;
 }
+
+a.see-more {
+    border:1px solid var(--lightgray);
+    width:40%;
+    align-self:center;
+    margin-bottom:25px;
+    position:relative;
+    justify-content:center;
+    border-radius:25px;
+    font-size:0.9rem;
+    color:revert;
+    padding:10px 25px;
+}
+a.see-more:hover {
+    background:rgba(0,0,0,2%);
+}
+.see-more .material-icons-outlined {
+    position:absolute;
+    left:10px;
+    color:revert;
+    font-size:1.25rem;
+}
