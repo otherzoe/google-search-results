@@ -307,7 +307,7 @@ text-decoration:none;
     font:1.25rem 'roboto';
 }
 .search-item small {
-    font:0.75rem 'roboto';
+    font:0.9rem 'roboto';
     width:100%;
     flex-shrink:0;
     margin-bottom:5px;
