@@ -7,6 +7,7 @@
 }
 body {
     width:1300px;
+    color:black;
 }
 header {
     width: calc(100% - 60px);
@@ -179,4 +180,30 @@ main .featured-snippit .snippit-body em {
     font-size:0.75rem;
     color:var(--mediumgray);
     margin-left:5px;
+}
+
+main .featured-snippit a.snippet-link {
+    display:block;
+    font:1.25rem/1 'roboto';
+    margin-top:25px;
+    text-decoration:none;
+}
+
+main .featured-snippit a.snippet-link .snippet-hyperlink {
+display:flex;
+align-items:center;
+color:var(--mediumgray);
+font-size:.9rem;
+text-decoration:none;
+margin-bottom:10px;
+}
+
+main .featured-snippit a.snippet-link em {
+    color:black;
+    margin-right:3px;
+}
+
+main .featured-snippit a.snippet-link .material-icons-outlined {
+    font-size:1.25rem;
+    margin-left:15px;
 }
