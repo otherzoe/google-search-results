@@ -2,6 +2,7 @@
     --lightgray:#eee;
     --mediumgray:#888;
     --darkgray:#444;
+    --gray:#ccc;
     --blue: #1a73e8;
     font-size:16px;
 }
@@ -186,6 +187,7 @@ main .featured-snippit a.snippet-link {
     display:block;
     font:1.25rem/1 'roboto';
     margin-top:25px;
+    margin-bottom:25px;
     text-decoration:none;
 }
 
@@ -206,4 +208,41 @@ main .featured-snippit a.snippet-link em {
 main .featured-snippit a.snippet-link .material-icons-outlined {
     font-size:1.25rem;
     margin-left:15px;
+}
+
+main .featured-snippit .snippet-footer {
+display:flex;
+align-items:center;
+gap:10px;
+font:0.75rem roboto;
+color:var(--darkgray);
+}
+
+main .featured-snippit .snippet-footer a {
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+}
+
+main .featured-snippit .snippet-footer a span {
+    margin-right:10px;
+    font-size:1rem;
+    
+}
+main .featured-snippit .snippet-footer a:hover span {
+    text-decoration:none;
+}
+
+main .featured-snippit .snippet-footer a:hover {
+    text-decoration:underline;
+}
+
+.flex-grow {
+    flex-grow:1;
+    height:1px;
+    background-color:var(--gray);
+}
+
+main .featured-snippit .snippet-footer a {
+    color:var(--mediumgray);
 }
