@@ -283,6 +283,12 @@ main .featured-snippit .snippet-footer a {
     color:gray;
 }
 
+.search-suggest a img {
+    width:40px;
+    margin-right:15px;
+    display:block;
+}
+
 .suggest-footer {
     display:flex;
     font:0.75rem 'roboto';
