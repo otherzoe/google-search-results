@@ -449,3 +449,16 @@ a.see-more:hover {
 .other-searches a:hover div {
     text-decoration:underline;
 }
+
+.pagination {
+    display:flex;
+    position:relative;
+}
+
+.pagination .page .logo {
+    background-image:url(https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png);
+    height:40px;
+    width:20px;
+    background-size:cover;
+    background-position:bottom 0 right 72px;
+}
