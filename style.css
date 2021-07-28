@@ -535,7 +535,26 @@ a.next-page:hover div {
 }
 
 footer {
-    width:100%;
+    width:calc(100% - 177px);
     background:var(--lightgray);
-    padding:25px 0;
+    padding:25px 0 25px 177px;
+    display:flex;
+    flex-flow:row wrap;
+    gap:20px;
+    font:0.9rem 'roboto';
+    color:var(--mediumgray);
+}
+
+footer div {
+    width:100%;
+}
+
+footer div .material-icons {
+    font-size:0.75rem;
+    margin-right:5px;
+}
+
+footer strong {
+    font-weight:700;
+    color:var(--black);
 }
