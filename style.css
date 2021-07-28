@@ -453,12 +453,45 @@ a.see-more:hover {
 .pagination {
     display:flex;
     position:relative;
+    gap:2px;
 }
 
+.pagination .page {
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+    font:.9rem/1 'roboto';
+    text-decoration:none;
+    color:var(--black);
+    position:relative;
+}
+.pagination a.page {
+    color:var(--blue);
+}
+
+.pagination a.page:hover .number {
+    text-decoration:underline;
+}
 .pagination .page .logo {
     background-image:url(https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png);
     height:40px;
     width:20px;
     background-size:cover;
     background-position:bottom 0 right 72px;
+}
+
+.pagination .page .logo.current {
+    background-position:bottom 0 right 51px;
+}
+
+.pagination .page:first-child:before {
+    content:'';
+    position:absolute;
+    top:0;
+    left:-32px;
+    background-image:url(https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png);
+    height:40px;
+    width:30px;
+    background-size:cover;
+    background-position:bottom 0 right 148px;
 }
