@@ -132,7 +132,7 @@ input#search {
 main {
     width: 640px;
     margin-left: 177px;
-    
+    display:grid;
 }
 
 main .search-results {
@@ -454,6 +454,7 @@ a.see-more:hover {
     display:flex;
     position:relative;
     gap:2px;
+    margin:50px auto;
 }
 
 .pagination .page {
@@ -509,6 +510,10 @@ a.see-more:hover {
     pointer-events:none;
 } 
 
+.page.first {
+    margin-left:33px;
+}
+
 a.next-page {
     margin-left:50px;
     padding-left:10px;
@@ -527,4 +532,10 @@ a.next-page {
 
 a.next-page:hover div {
     text-decoration:underline;
+}
+
+footer {
+    width:100%;
+    background:var(--lightgray);
+    padding:25px 0;
 }
