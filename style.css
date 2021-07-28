@@ -484,7 +484,7 @@ a.see-more:hover {
     background-position:bottom 0 right 51px;
 }
 
-.pagination .page:first-child:before {
+.page.first:before {
     content:'';
     position:absolute;
     top:0;
@@ -496,7 +496,7 @@ a.see-more:hover {
     background-position:bottom 0 right 148px;
 }
 
-.pagination .page:last-child:before {
+.page.last:before {
     content:'';
     position:absolute;
     top:0;
@@ -508,3 +508,23 @@ a.see-more:hover {
     background-position:bottom 0 right 0px;
     pointer-events:none;
 } 
+
+a.next-page {
+    margin-left:50px;
+    padding-left:10px;
+    display:flex;
+    flex-flow:column nowrap;
+    font:.9rem/1 'roboto';
+    color:var(--blue);
+    text-decoration:none;
+}
+
+.next-page .material-icons-outlined {
+    height:40px;
+    display:grid;
+    place-items:center;
+}
+
+a.next-page:hover div {
+    text-decoration:underline;
+}
